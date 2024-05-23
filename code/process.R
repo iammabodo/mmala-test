@@ -87,7 +87,7 @@ mutate_all(vars, as.numeric) |> cor() |> corrplot::corrplot(addCoef.col = "white
                                                             order = "AOE")
 
 
-# MOdel Building 
+# Model Building 
 
 model <- glm(event ~ restwma +dobef*posse, myData, family = "binomial")
 
